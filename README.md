@@ -56,6 +56,8 @@ source script.sh
 <br/>
 Here is a list of all the magical commands included in BhaiShell->commands:
 
+`Bhai_help` - Display all Hindi Commands
+
 `dekho` - Display files in the current directory (like ls)
 
 `dekho_pura` - Display files with detailed view (like ls -al)
