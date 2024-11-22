@@ -15,7 +15,6 @@ echo "  dikhao <file>        - File ka content dikhaye (Usage: cat file.txt)"
 echo "  niklo                - Terminal se nikle (Usage: exit)"
 echo "  pichla               - Pehle wale directory mein wapas jaye (Usage: cd -)"
 echo "  safai                - Terminal safai kare (Usage: clear)"
-echo "  pahuncho <path>      - Directory badalaye (Usage: cd /home/user)"
 echo "  band                 - Terminal se nikle (Usage: exit)"
 echo "  maar_dalo            - Process kill kare (Usage: kill <pid>)"
 echo "  tail                 - File ke aakhri hisse ko dikhaye (Usage: tail file.txt)"
@@ -31,7 +30,6 @@ echo "  ruk_jao <time>       - Time ke liye ruk jao (Usage: sleep <time>)"
 echo "  chhupao <file>       - File ko hidden folder mein daale (Usage: mv file.txt .file.txt)"
 echo "  yaad_rakho           - Command history dikhaye (Usage: history)"
 echo "  mast_kaam            - Funny output dikhaye (Usage: echo 'Funny output')"
-echo "  sab_dikhaye          - Hidden files ko dikhaye (Usage: ls -a)"
 echo "  tukde_karo           - File ko tukdon mein baate (Usage: split file.txt)"
 echo "  fasa_dalo            - Directory ko remove kare (Usage: rm -r dir_name)"
 echo "  jaldi_fasa_dalo      - Directory ko force se remove kare (Usage: rm -rf dir_name)"
@@ -130,15 +128,6 @@ function raja() {
 # Function to clear the terminal
 function safai() {
     clear || echo "Bhai, terminal safai nahi ho rahi. Tumne kya apna kitchen bana liya? #Messy"
-}
-
-# Function to change directory
-function pahuncho() {
-    if [ -z "$1" ]; then
-        echo "Bhai, tumhe path dena padega! Tumhe kya laga, main psychic hoon? (Usage: pahuncho /home/user)"
-    else
-        cd "$1" || echo "Bhai, yeh directory nahi mili. Tumne kya rasta bhool gaya? #LostInSpace"
-    fi
 }
 
 # Function to exit terminal
