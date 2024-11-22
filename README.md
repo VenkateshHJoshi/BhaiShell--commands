@@ -20,7 +20,7 @@ Follow these steps to clone and set up BhaiShell on your system:
 
 First, clone the repository to your local machine using the following command:
 ```bash
-git clone https://github.com/your-username/BhaiShell.git
+git clone https://github.com/VenkateshHJoshi/BhaiShell--commands.git
 ```
 Move into the project directory:
 ```bash
