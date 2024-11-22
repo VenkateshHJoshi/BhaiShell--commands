@@ -24,7 +24,7 @@ git clone https://github.com/VenkateshHJoshi/BhaiShell--commands.git
 ```
 Move into the project directory:
 ```bash
-cd BhaiShell
+cd BhaiShell--commands
 ```
 --------------------------------------------------------------------------------------
 # 2. Set Up the Script in Your Terminal
@@ -139,5 +139,5 @@ source ~/.zshrc   # For zsh users
 ```
 3.Delete the cloned repository:
 ```bash
-rm -rf /path/to/BhaiShell
+rm -rf /path/to/BhaiShell--commands
 ```
