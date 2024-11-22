@@ -13,28 +13,40 @@ A fun and playful terminal project where standard Linux commands are replaced wi
 
 
 
-## Installation
+## Installation and Usage Instructions
 
-To use the new Hindi commands in every terminal and in different terminal sessions, add the following line to your `~/.bashrc` or `~/.zshrc`:
+Follow these steps to clone and set up BhaiShell on your system:
+# 1. Clone the Repository
 
+First, clone the repository to your local machine using the following command:
 ```bash
-. PATH_TO_BHAISHELL_DIRECTORY/script.sh
+git clone https://github.com/your-username/BhaiShell.git
 ```
-For example, if you downloaded this project to your home/ folder, the command would be:
+Move into the project directory:
 ```bash
-. /home/BhaiShell/script.sh
+cd BhaiShell
 ```
-If you want to run the script in a single terminal session, just navigate to the project folder and run:
+--------------------------------------------------------------------------------------
+# 2. Set Up the Script in Your Terminal
+Make the script executable:
 ```bash
-. PATH_TO_PROJECT/script.sh
+chmod +x script.sh
 ```
-For example:
+To use the Hindi commands in every terminal session, add the following line to your shell configuration file:
+<br/>
+For `bash` Users:
 ```bash
-. ~/BhaiShell/script.sh
+echo "source $(pwd)/script.sh" >> ~/.bashrc
+source ~/.bashrc
 ```
-Alternatively, you can use the source command as well:
+For `zsh` Users:
 ```bash
-source ~/BhaiShell/script.sh
+echo "source $(pwd)/script.sh" >> ~/.zshrc
+source ~/.zshrc
+```
+If you want to run the script in only the current terminal session, simply use:
+```bash
+source script.sh
 ```
 <br/>
 <br/>
@@ -109,4 +121,21 @@ Here is a list of all the magical commands included in BhaiShell->commands:
 `raja_giri <user>` - Change ownership of a file (like chown user_name file.txt)
 
 `kahan` - Show the current directory path (like pwd)
-
+<br/>
+<br/>
+# Uninstall (Optional)
+If you no longer wish to use BhaiShell, you can remove it with these steps:
+<br/>
+1.Open your shell configuration file (~/.bashrc or ~/.zshrc) and remove the line:
+```bash
+source /path/to/script.sh
+```
+2.Reload the shell configuration:
+```bash
+source ~/.bashrc  # For bash users
+source ~/.zshrc   # For zsh users
+```
+3.Delete the cloned repository:
+```bash
+rm -rf /path/to/BhaiShell
+```
