@@ -68,8 +68,6 @@ Here is a list of all the magical commands included in BhaiShell->commands:
 
 `safai` - Clear the terminal screen (like clear)
 
-`pahuncho <path>` - Change to the specified directory (like cd /home/user)
-
 `band` - Exit the terminal (like exit)
 
 `maar_dalo` - Kill a process (like kill <pid>)
@@ -99,8 +97,6 @@ Here is a list of all the magical commands included in BhaiShell->commands:
 `yaad_rakho` - Show the command history (like history)
 
 `mast_kaam` - Display a funny output (like echo 'Funny output')
-
-`sab_dikhaye` - Display all files, including hidden ones (like ls -a)
 
 `tukde_karo` - Split a file into smaller parts (like split file.txt)
 
